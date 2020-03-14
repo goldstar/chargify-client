@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://goldstar-acme.chargify.com/components/lookup.json?handle=sample-metered-impressions
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Authorization:
+      - Basic MTIzNDU2Nzg5QUJDREVGR0hJSktMTU5PUFFSU1RVVldYWVo6WA==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate, no-cache, no-store
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 11 Mar 2020 18:39:22 GMT
+      Etag:
+      - W/"4e952a969dbc76573c01913f02e893b2"
+      P3p:
+      - CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
+      Server:
+      - nginx + Phusion Passenger
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger Enterprise
+      X-Request-Id:
+      - fe398114-92e7-4950-812f-b464c2ea535c
+      X-Runtime:
+      - '0.067303'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '828'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"component":{"id":946642,"name":"Sample Metered Impressions","handle":"sample-metered-impressions","pricing_scheme":"per_unit","unit_name":"cpm
+        unit","unit_price":"5.0","product_family_id":1511046,"price_per_unit_in_cents":null,"kind":"metered_component","archived":false,"taxable":false,"description":null,"default_price_point_id":807884,"prices":[{"id":1662398,"component_id":946642,"starting_quantity":1,"ending_quantity":null,"unit_price":"5.0","price_point_id":807884,"formatted_unit_price":"$5.00","segment_id":null}],"price_point_count":1,"price_points_url":"https://goldstar-acme.chargify.com/components/946642/price_points","tax_code":"D0000000","recurring":false,"upgrade_charge":null,"downgrade_credit":null,"created_at":"2020-03-02T16:45:16-05:00","hide_date_range_on_invoice":true,"allow_fractional_quantities":true}}'
+    http_version: null
+  recorded_at: Wed, 11 Mar 2020 18:39:22 GMT
+recorded_with: VCR 5.1.0

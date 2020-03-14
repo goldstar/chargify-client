@@ -1,0 +1,231 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://goldstar-acme.chargify.com/customers.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Authorization:
+      - Basic MTIzNDU2Nzg5QUJDREVGR0hJSktMTU5PUFFSU1RVVldYWVo6WA==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate, no-cache, no-store
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 09 Mar 2020 23:07:14 GMT
+      Etag:
+      - W/"907925daa56e954d44caf4bf9ee31aa0"
+      P3p:
+      - CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
+      Server:
+      - nginx + Phusion Passenger
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger Enterprise
+      X-Request-Id:
+      - 2132ecb1-b567-4819-a2fb-28b381d3a24d
+      X-Runtime:
+      - '0.030016'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '1568'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '[{"customer":{"first_name":"Fred","last_name":"Flintstone","email":"fred@example.com","cc_emails":"","organization":"","reference":"contact_fred","id":32708421,"created_at":"2020-03-02T18:18:30-05:00","updated_at":"2020-03-04T19:35:43-05:00","address":"","address_2":"","city":"","state":"","zip":"","country":"","phone":"","verified":false,"portal_customer_created_at":null,"portal_invite_last_sent_at":null,"portal_invite_last_accepted_at":null,"tax_exempt":false,"vat_number":"","parent_id":null,"locale":null}},{"customer":{"first_name":"Barney","last_name":"Rubble","email":"barney@example.com","cc_emails":"","organization":"","reference":"contact_barney","id":32709011,"created_at":"2020-03-02T19:02:57-05:00","updated_at":"2020-03-05T16:58:11-05:00","address":"","address_2":"","city":"","state":"","zip":"","country":"","phone":"","verified":false,"portal_customer_created_at":null,"portal_invite_last_sent_at":null,"portal_invite_last_accepted_at":null,"tax_exempt":false,"vat_number":"","parent_id":null,"locale":null}},{"customer":{"first_name":"Wilma","last_name":"Flintstone","email":"wilma@example.com","cc_emails":null,"organization":null,"reference":"contact_wilma","id":32726434,"created_at":"2020-03-03T19:17:18-05:00","updated_at":"2020-03-03T19:17:18-05:00","address":null,"address_2":null,"city":null,"state":null,"zip":null,"country":null,"phone":null,"verified":false,"portal_customer_created_at":null,"portal_invite_last_sent_at":null,"portal_invite_last_accepted_at":null,"tax_exempt":false,"vat_number":null,"parent_id":null,"locale":null}}]'
+    http_version: null
+  recorded_at: Mon, 09 Mar 2020 23:07:14 GMT
+- request:
+    method: post
+    uri: https://goldstar-acme.chargify.com/customers.json
+    body:
+      encoding: UTF-8
+      string: '{"customer":{"first_name":"Fred","last_name":"Flintstone","email":"fred@example.com","reference":"user_fred"}}'
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Authorization:
+      - Basic MTIzNDU2Nzg5QUJDREVGR0hJSktMTU5PUFFSU1RVVldYWVo6WA==
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate, no-cache, no-store
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 10 Mar 2020 17:16:02 GMT
+      Etag:
+      - W/"5c0004514259ac140b8703893b882784"
+      Location:
+      - https://goldstar-acme.chargify.com/customers/32878647
+      P3p:
+      - CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
+      Server:
+      - nginx + Phusion Passenger
+      Status:
+      - 201 Created
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger Enterprise
+      X-Request-Id:
+      - 3e52f780-8193-4d08-b84c-47012f9e7d62
+      X-Runtime:
+      - '0.058845'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '530'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"customer":{"first_name":"Fred","last_name":"Flintstone","email":"fred@example.com","cc_emails":null,"organization":null,"reference":"user_fred","id":32878647,"created_at":"2020-03-10T13:16:02-04:00","updated_at":"2020-03-10T13:16:02-04:00","address":null,"address_2":null,"city":null,"state":null,"zip":null,"country":null,"phone":null,"verified":false,"portal_customer_created_at":null,"portal_invite_last_sent_at":null,"portal_invite_last_accepted_at":null,"tax_exempt":false,"vat_number":null,"parent_id":null,"locale":null}}'
+    http_version: null
+  recorded_at: Tue, 10 Mar 2020 17:16:02 GMT
+- request:
+    method: get
+    uri: https://goldstar-acme.chargify.com/customers/4.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Authorization:
+      - Basic MTIzNDU2Nzg5QUJDREVGR0hJSktMTU5PUFFSU1RVVldYWVo6WA==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate, no-cache, no-store
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 10 Mar 2020 19:47:29 GMT
+      P3p:
+      - CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
+      Server:
+      - nginx + Phusion Passenger
+      Status:
+      - 404 Not Found
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger Enterprise
+      X-Request-Id:
+      - f79b5757-57b6-4276-8803-9cf9afc3d927
+      X-Runtime:
+      - '0.019356'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: null
+  recorded_at: Tue, 10 Mar 2020 19:47:29 GMT
+- request:
+    method: get
+    uri: https://goldstar-acme.chargify.com/customers/32708421.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Authorization:
+      - Basic MTIzNDU2Nzg5QUJDREVGR0hJSktMTU5PUFFSU1RVVldYWVo6WA==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate, no-cache, no-store
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 10 Mar 2020 19:48:23 GMT
+      Etag:
+      - W/"28a34f7a51cde541f363ec6a4a09f764"
+      P3p:
+      - CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
+      Server:
+      - nginx + Phusion Passenger
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger Enterprise
+      X-Request-Id:
+      - f24d3f0b-08b0-40ba-b42c-4c9d02e8b8a4
+      X-Runtime:
+      - '0.025552'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '513'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"customer":{"first_name":"Fred","last_name":"Flintstone","email":"fred@example.com","cc_emails":"","organization":"","reference":"contact_fred","id":32708421,"created_at":"2020-03-02T18:18:30-05:00","updated_at":"2020-03-04T19:35:43-05:00","address":"","address_2":"","city":"","state":"","zip":"","country":"","phone":"","verified":false,"portal_customer_created_at":null,"portal_invite_last_sent_at":null,"portal_invite_last_accepted_at":null,"tax_exempt":false,"vat_number":"","parent_id":null,"locale":null}}'
+    http_version: null
+  recorded_at: Tue, 10 Mar 2020 19:48:23 GMT
+recorded_with: VCR 5.1.0

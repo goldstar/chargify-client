@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://goldstar-acme.chargify.com/payment_profiles/22658910.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Authorization:
+      - Basic MTIzNDU2Nzg5QUJDREVGR0hJSktMTU5PUFFSU1RVVldYWVo6WA==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate, no-cache, no-store
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 10 Mar 2020 23:06:32 GMT
+      Etag:
+      - W/"24d4d76899fcc523c92d3cbbd651485a"
+      P3p:
+      - CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
+      Server:
+      - nginx + Phusion Passenger
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger Enterprise
+      X-Request-Id:
+      - 27edb4e9-6d66-4a3c-a83b-610c7adab2e2
+      X-Runtime:
+      - '0.032394'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '457'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"payment_profile":{"id":22658910,"first_name":"Fred","last_name":"Flintstone","masked_card_number":null,"card_type":null,"expiration_month":null,"expiration_year":null,"customer_id":32708421,"current_vault":"braintree_blue","vault_token":"123456780","billing_address":null,"billing_city":null,"billing_state":null,"billing_zip":null,"billing_country":null,"customer_vault_token":null,"billing_address_2":null,"payment_type":"credit_card","disabled":false}}'
+    http_version: null
+  recorded_at: Tue, 10 Mar 2020 23:06:32 GMT
+recorded_with: VCR 5.1.0

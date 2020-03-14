@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://goldstar-acme.chargify.com/products.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Authorization:
+      - Basic MTIzNDU2Nzg5QUJDREVGR0hJSktMTU5PUFFSU1RVVldYWVo6WA==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate, no-cache, no-store
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 11 Mar 2020 00:02:46 GMT
+      Etag:
+      - W/"56beab3402f4c4d345724d7fb114c7a5"
+      P3p:
+      - CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
+      Server:
+      - nginx + Phusion Passenger
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger Enterprise
+      X-Request-Id:
+      - 796ec99c-51ed-4388-b07d-298b3fc0964c
+      X-Runtime:
+      - '0.067818'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '1927'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '[{"product":{"id":5206305,"name":"Sample Daily","handle":"sample-billing-daily","description":"","accounting_code":"","request_credit_card":true,"expiration_interval":null,"expiration_interval_unit":"never","created_at":"2020-03-02T15:12:19-05:00","updated_at":"2020-03-03T16:32:59-05:00","price_in_cents":0,"interval":1,"interval_unit":"day","initial_charge_in_cents":null,"trial_price_in_cents":null,"trial_interval":null,"trial_interval_unit":"month","archived_at":null,"require_credit_card":false,"return_params":"","taxable":false,"update_return_url":"","tax_code":"D0000000","initial_charge_after_trial":false,"version_number":1,"update_return_params":"","default_product_price_point_id":894667,"product_price_point_id":894667,"product_price_point_handle":"uuid:0b08a920-3ef0-0138-13d5-02bc217d9360","product_family":{"id":1511046,"name":"Billing
+        Plans","description":null,"handle":"goldstar-billing-plans","accounting_code":null},"public_signup_pages":[]}},{"product":{"id":5206448,"name":"Boost
+        Remittance","handle":"sample-remittance","description":"","accounting_code":"","request_credit_card":true,"expiration_interval":null,"expiration_interval_unit":"never","created_at":"2020-03-03T16:32:19-05:00","updated_at":"2020-03-03T16:32:19-05:00","price_in_cents":0,"interval":1,"interval_unit":"month","initial_charge_in_cents":null,"trial_price_in_cents":null,"trial_interval":null,"trial_interval_unit":"month","archived_at":null,"require_credit_card":false,"return_params":"","taxable":false,"update_return_url":"","tax_code":"D0000000","initial_charge_after_trial":false,"version_number":1,"update_return_params":"","default_product_price_point_id":894859,"product_price_point_id":894859,"product_price_point_handle":"uuid:627f54f0-3fc4-0138-2a3f-0a7da89f880c","product_family":{"id":1511046,"name":"Billing
+        Plans","description":null,"handle":"goldstar-billing-plans","accounting_code":null},"public_signup_pages":[]}}]'
+    http_version: null
+  recorded_at: Wed, 11 Mar 2020 00:02:46 GMT
+recorded_with: VCR 5.1.0

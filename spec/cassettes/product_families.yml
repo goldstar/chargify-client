@@ -1,0 +1,184 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://goldstar-acme.chargify.com/product_families.json
+    body:
+      encoding: UTF-8
+      string: '{"product_family":{"name":"My New Family","description":"A big happy
+        . . .","handle":"my_new_family"}}'
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Authorization:
+      - Basic MTIzNDU2Nzg5QUJDREVGR0hJSktMTU5PUFFSU1RVVldYWVo6WA==
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate, no-cache, no-store
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 10 Mar 2020 23:58:34 GMT
+      Etag:
+      - W/"8e4e86b0ab044b72264ba44cfcb0abdb"
+      Location:
+      - https://goldstar-acme.chargify.com/product_families/1513478
+      P3p:
+      - CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
+      Server:
+      - nginx + Phusion Passenger
+      Set-Cookie:
+      - _chargify_session=MTBWOFpnOEg4Ry81TUQwOGpSQ1ZNNGUxNTAweGd4cXA2ZE42MVRvZVdtTEhTRUlsQ1JKTVVIcG9GQk5VN1lseEJtb2o0WlA0Qmx3ek9qUU5LQXhQWmprdEp0ZjB2RVJxY3h4ejFEejB3N0FKdmsya2hkUU8rTWVUc25WNFB1c0FHOWRMS1BOSEhWa2s2bXEwbFZiVVlCVUprVno1QkhjNVVLMWU2SzJvTnNXOXZRYVR3Wi96MmJRSVNxM1lVVnRVLS1BSE1rWXYxZk1tUVlSV3FzclhXVnp3PT0%3D--3fd75f6c364617090a9261c427862d398b39ac6c;
+        domain=.chargify.com; path=/; secure; HttpOnly
+      Status:
+      - 201 Created
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger Enterprise
+      X-Request-Id:
+      - 62d93c4d-1fd5-4c34-a8cd-173a81cfb8dd
+      X-Runtime:
+      - '0.039294'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '138'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"product_family":{"id":1513478,"name":"My New Family","description":"A
+        big happy . . .","handle":"my_new_family","accounting_code":null}}'
+    http_version: null
+  recorded_at: Tue, 10 Mar 2020 23:58:34 GMT
+- request:
+    method: get
+    uri: https://goldstar-acme.chargify.com/product_families/1511046.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Authorization:
+      - Basic MTIzNDU2Nzg5QUJDREVGR0hJSktMTU5PUFFSU1RVVldYWVo6WA==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate, no-cache, no-store
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 10 Mar 2020 23:58:34 GMT
+      Etag:
+      - W/"696af5bc7faf7f3e9aa7504aba47b8c5"
+      P3p:
+      - CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
+      Server:
+      - nginx + Phusion Passenger
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger Enterprise
+      X-Request-Id:
+      - a4dba10d-e899-4a6c-8f5d-b8170a823fb4
+      X-Runtime:
+      - '0.022405'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '132'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"product_family":{"id":1511046,"name":"Billing Plans","description":null,"handle":"goldstar-billing-plans","accounting_code":null}}'
+    http_version: null
+  recorded_at: Tue, 10 Mar 2020 23:58:34 GMT
+- request:
+    method: get
+    uri: https://goldstar-acme.chargify.com/product_families.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Authorization:
+      - Basic MTIzNDU2Nzg5QUJDREVGR0hJSktMTU5PUFFSU1RVVldYWVo6WA==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate, no-cache, no-store
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 10 Mar 2020 23:58:34 GMT
+      Etag:
+      - W/"8a42c67cfa4a89d958b544d5503dad37"
+      P3p:
+      - CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
+      Server:
+      - nginx + Phusion Passenger
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger Enterprise
+      X-Request-Id:
+      - 36ef0e2a-b19c-4752-a333-8f1203a3c8c3
+      X-Runtime:
+      - '0.029697'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '273'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '[{"product_family":{"id":1511046,"name":"Billing Plans","description":null,"handle":"goldstar-billing-plans","accounting_code":null}},{"product_family":{"id":1513478,"name":"My
+        New Family","description":"A big happy . . .","handle":"my_new_family","accounting_code":null}}]'
+    http_version: null
+  recorded_at: Tue, 10 Mar 2020 23:58:34 GMT
+recorded_with: VCR 5.1.0
